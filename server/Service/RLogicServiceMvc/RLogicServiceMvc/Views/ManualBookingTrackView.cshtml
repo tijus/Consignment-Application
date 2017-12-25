@@ -1,0 +1,134 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+@{
+    RLogicServiceMvc.Models.ManualBookingTrackModel mbt = ViewBag.BookingTrackModel;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manual LR Tracking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/Resource.js"></script>
+    <link rel="stylesheet" href="~/Content/Form.css" />
+    <script>
+
+        $(document).ready(function () {
+            $("#loading").hide();
+            $("#trackingform").hide();
+            $("#submit").click(function () {
+                var value =  $("#lr_no").val();
+                AjaxGet(value, "/ManualBooking/GetManualBookingByNo", "GET", "json", "#result", "#trackingform", "#loading", "#ManualBookingId");
+                
+                
+            });
+            return false;
+        });
+
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            AjaxPost("#trackingformid", "/ManualBookingTrack/Save", "POST", "#loading");
+        });
+
+    </script>
+
+    </head>
+<div id="loading">
+    <img id="loading-image" src="~/Images/spin.gif" alt="Loading..." />
+</div>
+<body class="container">
+    <h1 align="center">LR Tracking & Update</h1>
+    <form role="form" id="lrtrackingform">
+        <div class="form-group" id="part2">
+            <label for="lr_no">Select LR No.:</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="lr_no" name="lr_no" maxlength="10" required />
+                <div class="input-group-addon green"><span class="glyphicon glyphicon-asterisk white"></span></div>
+            </div>
+        </div>
+        <button type="button" id="submit" class="btn btn-lg btn-success">Submit</button>
+    </form>
+
+    <hr>
+    <div id="result">
+        
+    </div>
+    <div id="trackingform">
+        <form role="form" id="trackingformid">
+            <input type="hidden" class="form-control" id="ManualBookingId" name="ManualBookingId">
+            <div class="form-group">
+                <label for="TrackingDate">Tracking Date Time:</label>
+                <div class="input-group">
+                    <input type="datetime-local" class="form-control" value="@mbt.TrackingDate" name="TrackingDate">
+                    <div class="input-group-addon green"><span class="glyphicon glyphicon-calendar white"></span></div>
+                </div>
+           </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" value="@mbt.Location" name="location" maxlength="20">
+                    <div class="input-group-addon green"><span class="glyphicon glyphicon-map-marker white"></span></div>
+                </div>
+            </div>
+                       
+            <div class="form-group">
+                <label for="remark">Remarks:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" value="@mbt.Remark" name="remark" placeholder="Remarks" maxlength="30">
+                    <div class="input-group-addon green"><span class="glyphicon glyphicon-pushpin white"></span></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason:</label>
+                <select class="form-control" id="reason" name="reason">
+                    <option value="">Select</option>
+
+                    </select>
+                <!--<input type="text" class="form-control" value="@mbt.Reason" name="reason" id="reason" required>-->
+                <input type="hidden" value="@mbt.ReasonId" name="reasonid" id="reasonid">
+
+            </div>
+            <input type="submit" class="btn btn-lg btn-success" value="Submit" />
+        </form>
+        <hr />
+    </div>
+    
+</body>
+</html>
+<script src='https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="text/javascript">
+    
+    
+        $.ajax({
+
+            url: "http://192.168.0.9/rlogicmob/ManualBookingTrack/getStatus?CompanyCode=ripl",
+            type: "GET",
+            dataType: "json",
+        })
+  .success(function (data) {
+
+      
+      var table = data.Table;
+      console.log(data);
+      $.each(table, function (key, value) {
+          $('#reason').append(
+       $("<option></option>")
+         .attr("value", value.Reason_ID )
+         .text(value.Reason)
+   );
+      });
+      
+      
+     
+
+  });
+  
+</script>

@@ -1,0 +1,146 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+@{
+    RLogicServiceMvc.Models.ManualBookingTrackModel mbt = ViewBag.BookingTrackModel;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LR POD Upload</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/Form.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://192.168.0.9/mobileapp/Resources/JS/signature_pad.js"></script>
+    <script src="~/Scripts/Resource.js"></script>
+    <script>
+        $(document).ready(function () {
+        $("#loading").hide();
+        $("#trackingform").hide();
+        $("#submit").click(function () {
+            var value = $("#lr_no").val();
+            AjaxGet(value, "/ManualBooking/GetManualBookingByNo", "GET", "json", "#result", "#trackingform", "#loading", "#ManualBookingId");
+
+
+        });
+        return false;
+    });
+    </script>
+    <script type="text/javascript">
+    
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        HideWhenToggleControls();
+        AjaxPost("#trackingformid", "/ManualBookingPOD/Save", "POST", "#loading");
+        
+    });
+
+    function GetQuerySring(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    function HideWhenToggleControls() {
+        var RowID = GetQuerySring("ID");
+
+        if ((RowID == null) || (RowID == "0")) {
+            document.getElementById("divViewSignature").style.display = "none";
+            document.getElementById("divUploadSignature").style.display = "block";
+            document.getElementById("btnChangeSignature").style.display = "none";
+        }
+        else {
+            document.getElementById("divViewSignature").style.display = "block";
+            document.getElementById("divUploadSignature").style.display = "none";
+            document.getElementById("btnChangeSignature").style.display = "block";
+        }
+    }
+
+    function ChangeSignature() {
+        document.getElementById("divViewSignature").style.display = "none";
+        document.getElementById("divUploadSignature").style.display = "block";
+        document.getElementById("btnChangeSignature").style.display = "none";
+    }
+    </script>
+</head>
+<div id="loading">
+    <img id="loading-image" src="~/Images/spin.gif" alt="Loading..." />
+</div>
+<body class="container">
+    <h1 align="center">POD Form</h1>
+    <div id="lrtrackingform">
+        <div class="form-group" id="part2">
+            <label for="lr_no">Select LR No.:</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="lr_no" name="lr_no" maxlength="10" required />
+                <div class="input-group-addon green"><span class="glyphicon glyphicon-asterisk white"></span></div>
+            </div>
+        </div>
+        <button type="button" id="submit" class="btn btn-success btn-lg">Submit</button>
+    </div>
+
+    <hr>
+    <div id="result"></div>
+    <br />
+    <div id="trackingform">
+        <form method="post" id="trackingformid" action=" ~/ManualBookingPOD/Save" enctype="multipart/form-data" >
+            <input type="hidden" class="form-control" id="ManualBookingId" name="ManualBookingId">
+            <div class="form-group">
+                <h4>Delivery DateTime:</h4>
+                <div class="input-group">
+                    <input type="datetime-local" class="form-control" name="DeliveryDateTime" id="DeliveryDatetime" required>
+                    <div class="input-group-addon green"><span class="glyphicon glyphicon-calendar white"></span></div>
+                </div>
+            </div>
+            
+                <label for="fileToUpload">Upload POD:</label><br />
+                <input type="file" name="PODUpload" id="PODUpload"/>
+           
+
+            <div class="form-group">
+                <label for="fileToUpload">Upload Signature:</label><br />
+                    
+            </div>
+
+            <div id="divViewSignature">
+                <img id="UploadSignature1_imgSignature" class="Signature-Images" onerror="imgError(this);" />
+            </div>
+            <div id="divUploadSignature">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="signature-pad">
+                        <div>
+                            <canvas style="width: 400px; height: 200px;"></canvas>
+                        </div>
+                        <div>
+                            <div class="alert alert-info">Sign above</div>
+                            <a data-action="clear" class="btn btn-info">Clear</a>
+                            <a data-action="save" class="btn btn-success">Save Signature</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="btnChangeSignature">
+                <a onclick="ChangeSignature();" class="btn btn-success"><i class="fa fa-exchange"></i>&nbsp;Change Signature</a>
+            </div>
+            <br/>
+            <div class="disable-control">
+                <input name="UploadSignature1_txtSignatureValue" type="text" id="UploadSignature1_txtSignatureValue" hidden/>
+             </div>
+           
+            <br>
+            <!--<input class="btn btn-lg btn-success"  name="submitPOD" id="submitPOD" value="submit" type="button"/>-->
+            <input type="submit" value="Submit" class="btn btn-lg btn-success" />
+            <hr>
+        </form>
+    </div>
+</body>
+</html>

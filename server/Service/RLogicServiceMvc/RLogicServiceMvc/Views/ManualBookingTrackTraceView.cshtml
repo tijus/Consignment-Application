@@ -1,0 +1,55 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+@{
+    RLogicServiceMvc.Models.ManualBookingTrackModel mbt = ViewBag.BookingTrackModel;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LR Track Trace</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/Resource.js"></script>
+    <link rel="stylesheet" href="~/Content/Form.css" />
+    <script>
+
+        $(document).ready(function () {
+            $("#loading").hide();
+            $("#submit").click(function () {
+                var value =  $("#lr_no").val();
+                AjaxGet1(value, "/ManualBooking/GetManualBookingByNo", "GET", "json", "#result", "#trackingresult", "#loading", "/ManualBookingTrackNTrace/GetTrackDetails");
+
+
+            });
+            return false;
+        });
+
+    </script>
+   
+</head>
+<div id="loading">
+    <img id="loading-image" src="~/Images/spin.gif" alt="Loading..." />
+</div>
+<body class="container">
+    <h1 align="center">LR Track Trace</h1>
+    <form role="form" id="lrtrackingform">
+        <div class="form-group" id="part2">
+            <label for="lr_no">Select LR No.:</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="lr_no" name="lr_no" maxlength="10" required />
+            <div class="input-group-addon green"><span class="glyphicon glyphicon-asterisk white"></span></div>
+            </div>
+        </div>
+        <button type="button" id="submit" class="btn btn-success btn-lg">Submit</button>
+    </form>
+
+    <hr>
+    <div id="result"></div>
+    <div id="trackingresult"></div>
+
+    <br />
+</body>
+</html>

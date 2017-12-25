@@ -1,0 +1,325 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+@{
+    RLogicServiceMvc.Models.ManualBookingModel mbm = ViewBag.BookingModel;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ManualBookingView</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/Form.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/Resource.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            //loading div hide
+            $('#loading').hide();
+
+            //form submit on click
+          
+           AjaxPost("#BookingForm", "/ManualBooking/Save", "POST", "#loading");
+          });
+         
+    </script>
+    <script type="text/javascript">
+    //    $(document).ready(function () {
+    //        $('#loading').hide();
+
+    
+    //        $.ajax({
+    //            url: '/ManualBooking/Save',
+    //            type: 'POST',
+    //            data: new FormData(this),
+    //            processData: false,
+    //            contentType: false
+    //        });
+    //    
+    //});
+
+    </script>
+
+    
+</head>
+<div id="loading">
+    <img id="loading-image" src="~/Images/spin.gif" alt="Loading..." />
+</div>
+<body class="container">
+    
+        <div id="response"></div>
+        <h3 align="center">LR Form</h3>
+
+        <form id="BookingForm" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <h4>Lr No.:</h4>
+                <div class="input-group">
+                    <input type="text" name="BookingNo" id="BookingNo" value="@mbm.BookingNo" class="form-control" maxlength="10" required />
+                    <div class="input-group-addon green"><span class="glyphicon glyphicon-asterisk white"></span></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>LR Date:</h4>
+                <div class="input-group">
+                    <input type="date" name="BookingDate" id="BookingDate" value="@mbm.BookingDate" class="form-control" required />
+                    <div class="input-group-addon green"><span class="glyphicon glyphicon-calendar white"></span></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Vehicle No.:</h4>
+
+                <input type="text" name="VechicleNo" id="VechicleNo" value="@mbm.VechicleNo" class="form-control" maxlength="20" required />
+
+            </div>
+            <input type="hidden" name="VehicleId" id="VehicleId" value="@mbm.VehicleId" required />
+
+
+            <div class="form-group">
+                <h4>Customer Name:</h4>
+
+                <input type="text" name="CustomerName" id="CustomerName" value="@mbm.CustomerName" class="form-control" maxlength="30" required />
+
+            </div>
+            <input type="hidden" name="CustomerId" id="CustomerId" value="@mbm.CustomerId" required />
+
+            <div class="form-group">
+                <h4>From Location:</h4>
+
+                <input type="text" name="FromLocation" id="FromLocation" value="@mbm.FromLocation" class="form-control" required />
+
+            </div>
+            <div id="fromlocation"></div>
+            <div class="form-group">
+
+                <input type="hidden" name="FromLocationId" id="FromLocationId" value="@mbm.FromLocationId" class="form-control" required />
+
+            </div>
+            <div class="form-group">
+                <h4>To Location:</h4>
+
+                <input type="text" name="ToLocation" id="ToLocation" value="@mbm.ToLocation" class="form-control" maxlength="20" required />
+
+            </div>
+            <div id="tolocationID"></div>
+            <div class="form-group">
+
+                <input type="hidden" name="ToLocationId" id="ToLocationId" value="@mbm.ToLocationId" class="form-control" required />
+
+            </div>
+            <div class="form-group">
+                <h4>Estimated Date Of Delivery:</h4>
+                <input type="date" name="BookingEdd" id="BookingEdd" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <h4>No Of Packages:</h4>
+                <input type="number" name="BookingNoOfPackages" id="BookingNoOfPackages" value="@mbm.BookingNoOfPackages" maxlength="8" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <h4>Weight:</h4>
+                <input type="number" name="BookingWeight" id="BookingWeight" value="@mbm.BookingWeight" class="form-control" maxlength="15" required />
+            </div>
+            <div class="form-group">
+                <h4>LR Image Upload:</h4>
+                <input type="file" name="Upload" id="Upload"  class="form-control" required />
+            </div>
+            <br />
+            <!--<button class="btn btn-success btn-lg" type="button" id="submit" name="Submit">Submit</button>-->
+            <input type="submit" class="btn btn-success btn-lg" value="Submit"/>
+        </form>
+        <hr />
+    
+    <script language="javascript" type="text/javascript">
+    
+    </script>
+</body>
+
+</html>
+
+
+<script src='https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="text/javascript">
+    var customername = document.getElementById("CustomerName");
+    var awesomplete_customer = new Awesomplete(customername, {
+        minChars: 1,
+        autoFirst: true
+    });
+    $("input#CustomerName").on("keydown", function () {
+        //localhost:64619/Search/getConsignorConsignee?CompanyCode=ripl&SearchFor=
+     //   AjaxGet("http:", "GET", "json", awesomplete_customer, "#CustomerName");
+        $.ajax({
+
+            url: "http://localhost:64619/Search/getConsignorConsignee?CompanyCode=ripl&SearchFor=" + this.value,
+            type: "GET",
+            dataType: "json",
+        })
+  .success(function (data) {
+
+      var namepair = [];
+      var id = [];
+      var table = data.Table;
+      console.log(data);
+      $.each(table, function (key, value) {
+          namepair.push(value.Client_Name);
+          id.push(value.Client_ID);
+      });
+      awesomplete_customer.list = namepair;
+      $("#CustomerId").val(id);
+      $("#CustomerName").focusout(function () {
+          $(this).trigger({
+              type: 'keydown',
+              which: 9
+          });
+
+      });
+
+  });
+    });
+</script>
+<script type="text/javascript">
+
+    var tolocation = document.getElementById("ToLocation");
+  
+    var awesomplete_tolocation = new Awesomplete(tolocation, {
+        minChars: 1,
+        autoFirst: true
+    });
+
+    $("input#ToLocation").on("keydown", function () {
+        $.ajax({
+
+            url: "http://localhost:64619/Search/getLocation?CompanyCode=ripl&SearchFor=" + this.value,
+            type: 'GET',
+            dataType: 'json'
+        })
+   .success(function (data1) {
+
+       var namepair = [];
+       var id = [];
+       var table1 = data1.Table;
+       console.log(data1);
+       $.each(table1, function (key, value) {
+           namepair.push(value.Service_Network_Name);
+           id.push(value.Service_Network_ID);
+       });
+
+       awesomplete_tolocation.list = namepair;
+       var index = namepair.indexOf($("#ToLocation").val());
+       $("#ToLocationId").val(id);
+       $("#ToLocation").focusout(function () {
+           $(this).trigger({
+               type: 'keydown',
+               which: 9
+           });
+
+       });
+
+   });
+
+    });
+
+</script>
+<script type="text/javascript">
+
+    var fromlocation = document.getElementById("FromLocation");
+
+
+    var awesomplete_fromlocation = new Awesomplete(fromlocation, {
+        minChars: 1,
+        autoFirst: true
+    });
+
+    $("input#FromLocation").on("keydown", function () {
+        $.ajax({
+
+            url: "http://localhost:64619/Search/getLocation?CompanyCode=ripl&SearchFor=" + this.value,
+            type: 'GET',
+            dataType: 'json'
+        })
+  .success(function (data1) {
+
+      var namepair = [];
+      var id = [];
+      var table1 = data1.Table;
+      console.log(data1);
+      $.each(table1, function (key, value) {
+          namepair.push(value.Service_Network_Name);
+          id.push(value.Service_Network_ID);
+      });
+
+      awesomplete_fromlocation.list = namepair;
+      $("#FromLocationId").val(id);
+      $("#FromLocation").focusout(function () {
+          $(this).trigger({
+              type: 'keydown',
+              which: 9
+          });
+
+      });
+
+  });
+    });
+
+</script>
+<script type="text/javascript">
+
+    var vech_no = document.getElementById("VechicleNo");
+
+
+    var awesomplete_vech_no = new Awesomplete(vech_no, {
+        minChars: 1,
+        autoFirst: true
+    });
+
+    $("input#VechicleNo").on("keydown", function () {
+        $.ajax({
+
+            url: "http://localhost:64619/Search/getVehicle?CompanyCode=ripl&SearchFor=" + this.value,
+            type: 'GET',
+            dataType: 'json'
+        })
+   .success(function (data) {
+
+       var namepair = [];
+       var id = [];
+       var table = data.Table;
+       console.log(data);
+       $.each(table, function (key, value) {
+           namepair.push(value.Vehicle_No);
+           id.push(value.Vehicle_ID);
+       });
+
+       awesomplete_vech_no.list = namepair;
+       $("#VehicleId").val(id);
+       $("#VechicleNo").focusout(function () {
+           $(this).trigger({
+               type: 'keydown',
+               which: 9
+           });
+
+       });
+
+   });
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
