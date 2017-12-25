@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:paddingTop="20dp"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:id="@+id/relativeLayout1"
+    android:background="#fde8e8">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:text="Login Here"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:id="@+id/textView1"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30sp" />
+        <TextView
+            android:text="Company Code:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:id="@+id/textView2"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:id="@+id/editView1"
+            android:layout_marginBottom="10sp" />
+        <TextView
+            android:text="Login Id:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editView1"
+            android:id="@+id/textView3"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:id="@+id/login_id"
+            android:layout_marginBottom="10sp" />
+        <TextView
+            android:text="Password:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_id"
+            android:id="@+id/textView4"
+            android:textSize="20sp" />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:id="@+id/password"
+            android:layout_marginBottom="30dp" />
+        <CheckBox
+            android:text="Remember Me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rm_chk" />
+    </LinearLayout>
+    <Button
+        android:text="Submit"
+        android:layout_width="207.0dp"
+        android:layout_height="51.5dp"
+        android:layout_below="@id/linearLayout1"
+        android:id="@+id/loginbtn"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="0.0dp"
+        android:textSize="20sp"
+        android:background="#ffffff"
+        android:textColor="#EE1B1B" />
+</RelativeLayout>

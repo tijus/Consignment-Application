@@ -1,0 +1,213 @@
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\App9.dll
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\App9.pdb
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\App9.App9.apk
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\App9.App9-Signed.apk
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\App9.dll
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\App9.pdb
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\bin\App9.App9.apk
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\layout\activity1.xml
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\layout\main.xml
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\values\strings.xml
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\drawable\icon.png
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\R.cs.flag
+c:\users\edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\uploadflags.txt
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\layout\authuser.xml
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\layout\dashboard.xml
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\Xamarin.Android.Support.v13.dll
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\layout\pager_item.xml
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\layout\fragment_sample.xml
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\drawable\ic_action_overflow.png
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\drawable\xs.png
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\menu\actionbar_main.xml
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\values\themes.xml
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\App9.csprojResolveAssemblyReference.cache
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\App9.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\Java.Interop.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\Mono.Android.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\mscorlib.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\System.Core.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\System.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\System.Xml.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\App9.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\System.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\layout\webviewframe.xml
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\res\layout\webviewfragment.xml
+C:\Users\Edexworld pc\documents\visual studio 2013\Projects\App9\App9\obj\Debug\App9.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\App9.csprojResolveAssemblyReference.cache
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\App9.dll
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\App9.pdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\App9.dll
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\App9.pdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\App9.App9.apk
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\App9.App9-Signed.apk
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\Xamarin.Android.Support.v13.dll
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\bin\App9.App9.apk
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\layout\activity1.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\layout\authuser.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\layout\dashboard.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\layout\fragment_sample.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\layout\pager_item.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\layout\webviewframe.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\layout\webviewfragment.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\layout\main.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\values\strings.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\drawable\icon.png
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\drawable\ic_action_overflow.png
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\drawable\xs.png
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\menu\actionbar_main.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\res\values\themes.xml
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\R.cs.flag
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\uploadflags.txt
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\App9.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\Java.Interop.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\Mono.Android.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\mscorlib.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\System.Core.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\System.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\System.Xml.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\App9.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\System.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\Jignesh Lad\Downloads\App9\App9\obj\Debug\App9.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\App9.dll
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\App9.pdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\App9.App9.apk
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\App9.App9-Signed.apk
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\Xamarin.Android.Support.v13.dll
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\App9.csprojResolveAssemblyReference.cache
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\App9.dll
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\App9.pdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\bin\App9.App9.apk
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\layout\activity1.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\layout\authuser.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\layout\dashboard.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\layout\fragment_sample.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\layout\pager_item.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\layout\webviewframe.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\layout\webviewfragment.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\layout\main.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\values\strings.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\drawable\icon.png
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\drawable\ic_action_overflow.png
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\drawable\xs.png
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\menu\actionbar_main.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\res\values\themes.xml
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\R.cs.flag
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\uploadflags.txt
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\App9.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\Java.Interop.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\Mono.Android.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\mscorlib.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\System.Core.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\System.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\System.Xml.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\App9.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\System.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\Jignesh Lad\Desktop\App9Final\App9\obj\Debug\App9.dll.mdb
+D:\App9Final\App9\bin\Debug\App9.dll
+D:\App9Final\App9\bin\Debug\App9.pdb
+D:\App9Final\App9\bin\Debug\App9.App9.apk
+D:\App9Final\App9\bin\Debug\App9.App9-Signed.apk
+D:\App9Final\App9\bin\Debug\Newtonsoft.Json.dll
+D:\App9Final\App9\bin\Debug\Xamarin.Android.Support.v13.dll
+D:\App9Final\App9\bin\Debug\Xamarin.Android.Support.v4.dll
+D:\App9Final\App9\bin\Debug\Newtonsoft.Json.xml
+D:\App9Final\App9\obj\Debug\App9.csprojResolveAssemblyReference.cache
+D:\App9Final\App9\obj\Debug\App9.dll
+D:\App9Final\App9\obj\Debug\App9.pdb
+D:\App9Final\App9\obj\Debug\android\bin\App9.App9.apk
+D:\App9Final\App9\obj\Debug\res\layout\activity1.xml
+D:\App9Final\App9\obj\Debug\res\layout\authuser.xml
+D:\App9Final\App9\obj\Debug\res\layout\dashboard.xml
+D:\App9Final\App9\obj\Debug\res\layout\fragment_sample.xml
+D:\App9Final\App9\obj\Debug\res\layout\pager_item.xml
+D:\App9Final\App9\obj\Debug\res\layout\webviewframe.xml
+D:\App9Final\App9\obj\Debug\res\layout\webviewfragment.xml
+D:\App9Final\App9\obj\Debug\res\layout\main.xml
+D:\App9Final\App9\obj\Debug\res\values\strings.xml
+D:\App9Final\App9\obj\Debug\res\drawable\icon.png
+D:\App9Final\App9\obj\Debug\res\drawable\ic_action_overflow.png
+D:\App9Final\App9\obj\Debug\res\drawable\xs.png
+D:\App9Final\App9\obj\Debug\res\menu\actionbar_main.xml
+D:\App9Final\App9\obj\Debug\res\values\themes.xml
+D:\App9Final\App9\obj\Debug\R.cs.flag
+D:\App9Final\App9\obj\Debug\uploadflags.txt
+D:\App9Final\App9\bin\Debug\App9.dll.mdb
+D:\App9Final\App9\bin\Debug\Java.Interop.dll.mdb
+D:\App9Final\App9\bin\Debug\Mono.Android.dll.mdb
+D:\App9Final\App9\bin\Debug\mscorlib.dll.mdb
+D:\App9Final\App9\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\App9Final\App9\bin\Debug\System.Core.dll.mdb
+D:\App9Final\App9\bin\Debug\System.dll.mdb
+D:\App9Final\App9\bin\Debug\System.Net.Http.dll.mdb
+D:\App9Final\App9\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\App9Final\App9\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\App9Final\App9\bin\Debug\System.Xml.dll.mdb
+D:\App9Final\App9\bin\Debug\System.Xml.Linq.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\App9.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\System.Core.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\System.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\App9Final\App9\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\App9Final\App9\obj\Debug\App9.dll.mdb
+D:\App9Final\App9\bin\Debug\App9.dll.mdb

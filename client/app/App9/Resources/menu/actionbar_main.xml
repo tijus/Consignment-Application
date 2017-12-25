@@ -1,0 +1,15 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/menu"
+        android:orderInCategory="100"
+        android:title="About Us"
+        android:showAsAction="never"/>
+  <item android:id="@+id/new_game"
+          android:title="Contact Us"
+        android:orderInCategory="100"
+          android:showAsAction="never"/>
+    <item android:id="@+id/help"
+          android:title="Signout" 
+          android:orderInCategory="100"
+          android:showAsAction="never"/>
+  
+</menu>
